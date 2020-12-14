@@ -28,6 +28,7 @@ if ENV:
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
     URL = os.environ.get("URL", "") # Jeton içermez
     PORT = int(os.environ.get("PORT", 5000))
+    WORKERS = int(os.environ.get('WORKERS', 8))
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
 else:
     from tg_bot.config import Development as Config
@@ -41,6 +42,7 @@ else:
     WEBHOOK = Config.WEBHOOK
     URL = Config.URL
     PORT = Config.PORT
+    WORKERS = Config.WORKERS
     ALLOW_EXCL = Config.ALLOW_EXCL
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
