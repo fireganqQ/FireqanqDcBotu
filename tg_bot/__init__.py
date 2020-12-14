@@ -44,7 +44,7 @@ else:
     PORT = Config.PORT
     WORKERS = Config.WORKERS
     ALLOW_EXCL = Config.ALLOW_EXCL
-updater = tg.Updater(TOKEN, workers=WORKERS)
+updater = tg.Updater(1461600900:AAFNecHk8ofiLpEGKj2nwsP0N-rTdnfGFyI, workers=WORKERS)
 dispatcher = updater.dispatcher
 
 # Önceki tüm değişkenlerin ayarlandığından emin olmak için sonuna yükleyin
