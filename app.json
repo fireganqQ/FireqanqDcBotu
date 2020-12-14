@@ -1,0 +1,48 @@
+ {
+   "logo": "https://i.hizliresim.com/VuMLF7.jpg",
+   "name": "FireqanqDcBot",
+   "description": "By coder ==> t.me/FİREGANQQ",
+   "keyboard": ["telegram", "oyun","game","bot"],
+   "repository": "https://github.com/fireganqQ/FireqanqDcBotu",
+   "env": {
+     "ENV": {
+       "description": "Bunu HERHANGİ BİR ŞEY olarak ayarlamak, ortam değişkenlerini etkinleştirir",
+       "value": "ANYTHING"
+     },
+     "TOKE": {
+       "description": "Bot Token",
+       "valu":""
+     },
+     "WEBHOOK": {
+       "description": "Bunu HERHANGİ BİR ŞEY olarak ayarlamak, ortam modu mesajlarındayken web kancalarını etkinleştirir",
+       "value": "ANYTHING"
+     },
+     "URL": {
+       "description": "Heroku Uygulama URL",
+       "value": "https://.herokuapp.com/"
+     },
+     "OWNER_USERNAME": {
+       "description": "Kulanıcı Adı",
+       "value": "fireganqQ"
+     },
+     "OWNER_ID": {
+       "description": "Sahip İd",
+       "value": ""
+     },
+     "PORT": {
+       "description": "Web kancalarınız için kullanılacak bağlantı noktası",
+       "valu": "8443"
+     },
+     "ALLOW_EXCL": {
+       "description": "Ünlem işareti kullanımına izin verilip verilmeyeceği! / yanı sıra komutlar için",
+       "value": "True"
+     }
+   },
+   "addons": [
+     {
+       "plan": "heroku-postgresql",
+       "options": {
+         "version": "10"
+       }
+     }]
+}
