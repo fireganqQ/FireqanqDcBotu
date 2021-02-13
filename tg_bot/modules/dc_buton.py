@@ -1,1 +1,5 @@
-Dostum Sen Bir Geri Zekalısın 
+from tg_bot import LOGGER
+
+LOGGER.info(
+"Dostum Sen Bir Geri Zekalısın!!"
+)
